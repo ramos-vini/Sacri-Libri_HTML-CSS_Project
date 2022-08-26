@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+form {
+    width: 50%;
+}
+
+textarea {
+    resize: none;
+    height: 250px !important;
+}
+
+main button {
+    background-color: #9B1200 !important;
+    border-color: #9B1200 !important;
+    margin-top: 3%;
+}
+
+main button:hover {
+    background-color: #800f00 !important;
+    border-color: #800f00 !important;
+}
+
+main button:focus,
+main button:active {
+    background-color: #800f00 !important;
+    border-color: #800f00 !important;
+    box-shadow: 0 0 0 0.25rem #9b12004f !important;
+}
+
+/* Media Query */
+
+/* Mobile */
+
+@media screen and (max-width: 576px) {
+
+    header form.d-flex {
+        width: 100%;
+    }
+
+    main>div {
+        align-items: center;
+        text-align: center;
+    }
+
+    main h3 {
+        font-size: 1.6em;
+        margin-bottom: 6%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    main label {
+        text-align: left;
+    }
+
+    main textarea {
+        height: 200px !important;
+    }
+
+    main button {
+        width: 100%;
+        margin-top: 6%;
+    }
+}

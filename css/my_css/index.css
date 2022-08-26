@@ -1,0 +1,131 @@
+/*  main  */
+
+.mainDiv1 {
+    padding: 0;
+}
+
+.modal-content {
+    text-align: justify !important;
+}
+
+.mainDiv3 {
+    background-image: url(../../assets/img/index_banner_rops.webp);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.85);
+    background-blend-mode: color;
+    background-position: center;
+    padding: 5% 10%;
+    color: white;
+}
+
+.mainDiv3 h5 {
+    margin: 2% 0;
+    font-weight: normal;
+}
+
+.mainDiv3 button {
+    --bs-btn-color: white;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: white;
+    --bs-btn-hover-color: black;
+    --bs-btn-active-bg: white;
+    --bs-btn-active-border-color: white;
+    --bs-btn-disabled-color: white;
+    --bs-btn-disabled-border-color: white;
+}
+
+.mainDiv3 button:focus {
+    border-color: white !important;
+    color: black !important;
+    box-shadow: 0 0 0 0.25rem #ffffff4f !important;
+}
+
+.mainDiv5 {
+    background-image: url(../../assets/img/index_banner_santos.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #f8f9fac2;
+    background-blend-mode: color;
+    padding: 3% 10%;
+    color: black;
+}
+
+.mainDiv5 h2 {
+    color: #9B1200;
+}
+
+.mainDiv5 .divFlex {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0;
+}
+
+.mainDiv5 .divFlex section {
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mainDiv5 .divFlex section img {
+    width: 100%;
+    border-radius: 500px;
+    margin-bottom: 8%;
+    transition: 0.3s;
+}
+
+.mainDiv5 .divFlex section img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.mainDiv5 .divFlex section img:hover~h5 {
+    color: #9B1200;
+    transition: 0.3s;
+}
+
+.mainDiv5 .divFlex section h5 {
+    margin-bottom: 0;
+    transition: 0.3s;
+}
+
+.mainDiv5 .divFlex section h5:hover {
+    cursor: pointer;
+    color: #9B1200;
+    transition: 0.3s;
+}
+
+/* footer */
+
+footer {
+    margin-top: 0;
+}
+
+/* Media Query */
+
+/* Mobile - (sm) no Bootstrap */
+
+@media screen and (max-width: 576px) {
+
+    .mainDiv5 .divFlex {
+        flex-wrap: wrap;
+    }
+
+    .mainDiv5 .divFlex section {
+        width: 26%;
+        margin-bottom: 6%;
+    }
+
+    #roundImgEscriva {
+        margin-left: auto;
+        margin-right: 6%;
+    }
+
+    #roundImgLewis {
+        margin-right: auto;
+        margin-left: 6%;
+    }
+}

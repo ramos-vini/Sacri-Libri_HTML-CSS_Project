@@ -1,0 +1,357 @@
+/* default */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@font-face {
+    font-family: logo;
+    src: url(../../assets/font/church.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    margin: 0 10%;
+}
+
+/* header */
+
+header {
+    height: 10vh;
+}
+
+h3.logo {
+    font-family: logo;
+    color: #9B1200;
+}
+
+a.dropdown-item:active {
+    background-color: #9B1200;
+}
+
+.form-control:focus {
+    border-color: #9B1200;
+    box-shadow: 0 0 0 0.25rem #9b12004f;
+}
+
+.btn-outline-success {
+    --bs-btn-color: #9B1200;
+    --bs-btn-border-color: #9B1200;
+    --bs-btn-hover-bg: #9B1200;
+    --bs-btn-hover-border-color: #9B1200;
+    --bs-btn-active-bg: #9B1200;
+    --bs-btn-active-border-color: #9B1200;
+    --bs-btn-disabled-color: #9B1200;
+    --bs-btn-disabled-border-color: #9B1200;
+}
+
+.btn-outline-success:focus {
+    border-color: #9B1200 !important;
+    box-shadow: 0 0 0 0.25rem #9b12004f !important;
+}
+
+/* main */
+
+main>div {
+    padding: 3% 10%;
+}
+
+main h3 {
+    margin-bottom: 2%;
+    position: relative;
+    width: fit-content;
+}
+
+main h3:hover {
+    cursor: pointer;
+}
+
+main h3::after {
+    content: "";
+    background-color: #9B1200;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 6%;
+    width: 0;
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+main h3:hover::after {
+    width: 100%;
+    opacity: 100%;
+    transition: 0.5s ease-out;
+}
+
+.containerBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 20%;
+    padding: 1%;
+    text-align: center;
+    border: rgba(128, 128, 128, 0.6) 1px solid;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: rgba(128, 128, 128, 0.8) 0 0 8px;
+}
+
+.box:hover i {
+    animation: piscarIcone 1.5s infinite;
+}
+
+@keyframes piscarIcone {
+    50% {
+        color: #ff1e00;
+    }
+}
+
+.box * {
+    margin: 0;
+}
+
+.box img {
+    width: 60%;
+    border-radius: 6px 6px 0 0;
+}
+
+.box h5 {
+    margin: 3% 0;
+    font-size: 1.1em;
+}
+
+.box .cinza {
+    color: gray;
+}
+
+.box .valorBox {
+    color: #9B1200;
+    font-size: 1.2em;
+}
+
+.fa-cart-plus {
+    color: #9B1200;
+    font-size: 1.8em;
+    margin-top: 10%;
+}
+
+.modal-body img {
+    border-radius: 6px;
+    margin-bottom: 3%;
+    width: 30%;
+}
+
+.precoModal {
+    border: #9B1200 1px solid;
+    border-radius: 6px;
+    padding: 1% 2%;
+    padding-right: 20%;
+    width: 50%;
+}
+
+.btModal {
+    background-color: #9B1200;
+    border-color: #9B1200;
+}
+
+.btModal:hover {
+    background-color: #800f00;
+    border-color: #800f00;
+}
+
+.btModal:focus,
+.btModal:active {
+    background-color: #800f00 !important;
+    border-color: #800f00 !important;
+    box-shadow: 0 0 0 0.25rem #9b12004f !important;
+}
+
+/* footer */
+
+footer {
+    background-color: #9B1200;
+    color: white;
+    margin-top: 3%;
+    margin-bottom: -5%;
+}
+
+footer>:first-child {
+    padding: 2% 10%;
+}
+
+footer>:last-child {
+    padding: 1% 10%;
+    background-color: #800f00;
+}
+
+footer>nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>nav>div {
+    margin-right: 6%;
+}
+
+footer>nav>div:last-of-type {
+    margin-right: 0 !important;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer h5 {
+    font-weight: lighter;
+}
+
+footer a>h5 {
+    font-weight: normal;
+}
+
+footer a>h5:hover {
+    text-decoration: underline;
+}
+
+footer span {
+    display: flex;
+    align-items: center;
+}
+
+footer span i {
+    margin-right: 3%;
+}
+
+footer .divIcones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divIcones i {
+    font-size: 2.0em;
+}
+
+.divIcones i:hover {
+    animation: pulse 0.5s;
+}
+
+/* Media Query */
+
+/* Tablet - (md) no Bootstrap */
+
+@media screen and (max-width: 768px) {
+    .containerBox {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 48%;
+        margin: 3% 0;
+        padding: 3%;
+    }
+
+    h5 {
+        font-size: 1.0em;
+    }
+
+    .divIcones i {
+        font-size: 1.2em !important;
+    }
+}
+
+/* Mobile - (sm) no Bootstrap */
+
+@media screen and (max-width: 576px) {
+
+    main>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main>div,
+    footer * {
+        text-align: center;
+    }
+
+    .modal-body {
+        text-align: justify !important;
+    }
+
+    .precoModal {
+        width: 100%;
+        margin: 3% 0;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.1em;
+    }
+
+    h4 {
+        font-size: 0.8em;
+    }
+
+    h5,
+    footer i,
+    p {
+        font-size: 0.7em !important;
+    }
+
+    main button {
+        font-size: 0.6em !important;
+        margin-top: 2%;
+    }
+
+    footer>nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer>nav>div {
+        margin-right: 0;
+    }
+
+    footer span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer span h5 {
+        margin: 3% 0;
+    }
+
+    footer hr {
+        display: block !important;
+    }
+
+}
