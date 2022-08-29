@@ -60,6 +60,10 @@ a.dropdown-item:active {
     box-shadow: 0 0 0 0.25rem #9b12004f !important;
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
 /* main */
 
 main>div {
