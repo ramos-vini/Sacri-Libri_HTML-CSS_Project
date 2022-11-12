@@ -1,7 +1,10 @@
-# Sacri Libri
+# Sacri Libri - Front-End Project [PT-BR]
+This is a personal project developed during my Full-Stack Web Development bootcamp at Instituto Infnet.
 
-[Projeto Final HTML/CSS - Instituto Infnet]
+Sacri Libri is a virtual catholic bookshop, which seeks faith and conversion through reading, acquiring knowledge and searching for truth.
 
-A Sacri Libri é uma livraria virtual católica, que busca expandir a fé e a conversão por meio da leitura, do conhecimento e da busca pela verdade.
-
-Trata-se de um projeto Front-End, desenvolvido de forma totalmente responsiva para a Web, utilizando as tecnologias de HTML5, CSS3 e Bootstrap.
+Main Technologies used:
+- Visual Studio Code;
+- HTML5;
+- CSS3;
+- Bootstrap.
