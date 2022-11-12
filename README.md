@@ -7,4 +7,5 @@ Main Technologies used:
 - Visual Studio Code;
 - HTML5;
 - CSS3;
+- Media Queries;
 - Bootstrap.
